@@ -23,4 +23,9 @@ public class CiCdPipelineApplication {
 		return "This is after the push";
 	}
 
+	@GetMapping("/hi")
+	public String msg(){
+		System.out.println("This is in cmd");
+		return "Hello";
+	}
 }
