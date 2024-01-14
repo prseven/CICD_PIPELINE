@@ -18,4 +18,9 @@ public class CiCdPipelineApplication {
 		return "Hello From CI-CD Pipeline Application";
 	}
 
+	@GetMapping("/msg")
+	public String message(){
+		return "This is after the push";
+	}
+
 }
